@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="w-full h-screen bg-slate-500 flex flex-col justify-center items-center space-y-10 bg-gradient-to-t from-gray-400 to-black"
+  >
+    <div
+      class="font-bold font-serif text-[60px] p-rounded-md winner text-white"
+    >
+      Tic Tac Toe
+    </div>
+    <div class="rounded-md shadow-md grid grid-cols-3 gap-1 holder">
+      <button
+        class="bg-white m-0 p-0 w-28 h-28 text-3xl font-semibold font-mono flex justify-center items-center rounded-sm hover:bg-slate-300 disabled:opacity-35 matrix"
+        data-row="0"
+        data-col="0"
+        id="index-1"
+      ></button>
+      <button
+        class="bg-white m-0 p-0 w-28 h-28 text-3xl font-semibold font-mono flex justify-center items-center rounded-sm hover:bg-slate-300 disabled:opacity-35 matrix"
+        data-row="0"
+        data-col="1"
+        id="index-2"
+      ></button>
+      <button
+        class="bg-white m-0 p-0 w-28 h-28 text-3xl font-semibold font-mono flex justify-center items-center rounded-sm hover:bg-slate-300 disabled:opacity-35 matrix"
+        data-row="0"
+        data-col="2"
+        id="index-3"
+      ></button>
+      <button
+        class="bg-white m-0 p-0 w-28 h-28 text-3xl font-semibold font-mono flex justify-center items-center rounded-sm hover:bg-slate-300 disabled:opacity-35 matrix"
+        data-row="1"
+        data-col="0"
+        id="index-4"
+      ></button>
+      <button
+        class="bg-white m-0 p-0 w-28 h-28 text-3xl font-semibold font-mono flex justify-center items-center rounded-sm hover:bg-slate-300 disabled:opacity-35 matrix"
+        data-row="1"
+        data-col="1"
+        id="index-5"
+      ></button>
+      <button
+        class="bg-white m-0 p-0 w-28 h-28 text-3xl font-semibold font-mono flex justify-center items-center rounded-sm hover:bg-slate-300 disabled:opacity-35 matrix"
+        data-row="1"
+        data-col="2"
+        id="index-6"
+      ></button>
+      <button
+        class="bg-white m-0 p-0 w-28 h-28 text-3xl font-semibold font-mono flex justify-center items-center rounded-sm hover:bg-slate-300 disabled:opacity-35 matrix"
+        data-row="2"
+        data-col="0"
+        id="index-7"
+      ></button>
+      <button
+        class="bg-white m-0 p-0 w-28 h-28 text-3xl font-semibold font-mono flex justify-center items-center rounded-sm hover:bg-slate-300 disabled:opacity-35 matrix"
+        data-row="2"
+        data-col="1"
+        id="index-8"
+      ></button>
+      <button
+        class="bg-white m-0 p-0 w-28 h-28 text-3xl font-semibold font-mono flex justify-center items-center rounded-sm hover:bg-slate-300 disabled:opacity-35 matrix"
+        data-row="2"
+        data-col="2"
+        id="index-9"
+      ></button>
+    </div>
+
+    <button
+      class="rounded-lg shadow-md bg-white px-3 py-2 font-semibold text-2xl new_game hover:bg-slate-200 active:bg-slate-300"
+    >
+      New Game
+    </button>
+  </body>
+</html>
