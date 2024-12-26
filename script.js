@@ -5,6 +5,11 @@ let count = 0;
 let buttons = document.querySelectorAll(".matrix");
 buttons.forEach((box) => {
   box.addEventListener("click", function () {
+    if(count==8 && !win_find(array))
+    {
+      document.querySelector(".winner").textContent = "It's a Tie";
+    }
+
     if (count % 2 == 0) {
       box.textContent = "O";
       count++;
